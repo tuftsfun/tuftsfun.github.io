@@ -2,6 +2,9 @@
 
 <head>
     <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -26,20 +29,39 @@
             </div>
     </nav>
 
-    <div class="container">
+    <div class="container">           
         <div class="row">
-            <div class="col-lg-12">
-                <h2>Tufts University Functional Programming Group</h2>
+            <div class="col-lg-10">
+                <h2>Tufts University Functional Programming Group (FUN in the Afternoon)</h2>
                 <br>
             </div>
         </div>
+
         <div class="row">
+            <div class="col-lg-4">
+                <pre>
+                    <code class="haskell" id="welcome-code">
+funInTheAfternoon :: IO ()
+funInTheAfternoon = putStrLn "Welcome!"
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <h4>FUN News</h4>
+                <p><b>(2/9)</b> FUN in the Afternoon has been revived! We will figure out a 
+                    meeting time and start meeting soon.</p>
+                <br>
+            </div>
             <div class="col-lg-8">
                 <h4>What is FUN in the Afternoon?</h4>
                 <p>
-                    FUN in the Afternoon is the functional programming interest group at Tufts CS. FUN is mainly for undergraduates, although
-                    graduate students are also welcome. Here we will discuss fun and interesting uses of and concepts related
-                    to functional programming. If you enjoyed COMP 105 and want to learn more about FP, drop by our meetings!
+                    FUN in the Afternoon is the functional programming interest group at Tufts CS. The new FUN is mainly for undergraduates, although
+                    graduate students (and faculty) are also welcome. Here we will discuss fun and interesting uses of and ideas in
+                    functional programming. Whether you're still in COMP 105 (and love it), or you have programmed 
+                    your digital hourglass in functional style, you're more than welcome to join us!
                 </p>
                 <br>
             </div>
